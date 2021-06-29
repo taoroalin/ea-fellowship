@@ -24,9 +24,8 @@ const emailEx = () => {
 const startup = async () => {
   console.log("hi")
   const client = await db.connect()
-  await db.examply(client)
+  await db.setupDB(client)
   client.end()
-  // emailEx()
 }
 
 startup()
